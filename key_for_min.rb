@@ -7,7 +7,7 @@ def key_for_min_value(name_hash)
   else
     name_hash.collect do |key, value|
       lowest_value = name_hash[key]
-      key_min = 0
+      key_min = key
       if value < lowest_value
         lowest_value = value
         key_min = key.join
